@@ -14,7 +14,6 @@ class TasksController < ApplicationController
     if logged_in?
       @task = current_user.tasks.build
     end
-      @task=Task.new
   end
 
   def create
